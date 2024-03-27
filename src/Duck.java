@@ -41,4 +41,27 @@ class FlyWithRocketPower implements FlyBehavior{
     }
 }
 
+abstract class Duck{
+    QuackBehavior quackBehavior;
+    FlyBehavior flyBehavior;
+
+    abstract void display();
+
+    void swim(){
+        System.out.println("Berenang");
+    }
+    void performQuack (){
+        quackBehavior.quack();
+    }
+    void performFly() {
+        flyBehavior.fly();
+    }
+    void setFlyBehavior(FlyBehavior fb) {
+        flyBehavior = fb;
+    }
+    void setQuackBehavior(QuackBehavior qb) {
+        quackBehavior = qb;
+    }
+}
+
 
