@@ -63,5 +63,53 @@ abstract class Duck{
         quackBehavior = qb;
     }
 }
-
-
+class MallardDuck extends Duck{
+    public MallardDuck (){
+        quackBehavior = new Quack();
+        flyBehavior = new FlyWithWings();
+    }
+    @Override
+    void display() {
+        System.out.println("Tampilan MallardDuck");
+    }
+}
+class RedheadDuck extends Duck {
+    public RedheadDuck (){
+        quackBehavior = new Quack();
+        flyBehavior = new FlyWithWings();
+    }
+    @Override
+    void display() {
+        System.out.println("Tampilan RedheadDuck");
+    }
+}
+class  RubberDuck extends  Duck{
+    public RedheadDuck (){
+        quackBehavior = new Quack();
+        flyBehavior = new FlyNoWay();
+    }
+    @Override
+    void display() {
+        System.out.println("Tampilan RubberDuck");
+    }
+}
+class WoodenDuck extends Duck{
+    public WoodenDuck (){
+        quackBehavior = new Quack();
+        flyBehavior = new FlyNoWay();
+    }
+    @Override
+    void display() {
+        System.out.println("Tampilan WoodenDuck");
+    }
+}
+class ModelDuck extends Duck{
+    ModelDuck(){
+        quackBehavior = new Quack();
+        flyBehavior = new FlyNoWay();
+    }
+    @Override
+    void display() {
+        System.out.println("Tampilan ModelDuck");
+    }
+}
